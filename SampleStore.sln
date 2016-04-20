@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleStore.WebUI", "Sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleStore.Tests", "SampleStore.Tests\SampleStore.Tests.csproj", "{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartStore.Model", "SmartStore.Model\SmartStore.Model.csproj", "{5009CD76-577C-4C64-9018-973B56D5435A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5009CD76-577C-4C64-9018-973B56D5435A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5009CD76-577C-4C64-9018-973B56D5435A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5009CD76-577C-4C64-9018-973B56D5435A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5009CD76-577C-4C64-9018-973B56D5435A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
