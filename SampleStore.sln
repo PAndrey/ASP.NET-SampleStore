@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleStore.WebUI", "SampleStore.WebUI\SampleStore.WebUI.csproj", "{521DF7D1-7623-44FE-B6ED-526FE7ED7825}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleStore.Tests", "SampleStore.Tests\SampleStore.Tests.csproj", "{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{521DF7D1-7623-44FE-B6ED-526FE7ED7825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{521DF7D1-7623-44FE-B6ED-526FE7ED7825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{521DF7D1-7623-44FE-B6ED-526FE7ED7825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
