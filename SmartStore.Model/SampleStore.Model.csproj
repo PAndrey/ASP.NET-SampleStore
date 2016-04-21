@@ -7,8 +7,8 @@
     <ProjectGuid>{5009CD76-577C-4C64-9018-973B56D5435A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SmartStore.Model</RootNamespace>
-    <AssemblyName>SmartStore.Model</AssemblyName>
+    <RootNamespace>SampleStore.Model</RootNamespace>
+    <AssemblyName>SampleStore.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,9 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Entities\Abstract\IProductRepository.cs" />
+    <Compile Include="Entities\Abstract\IUserRepository.cs" />
+    <Compile Include="Entities\Concrete\TestRepository.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
