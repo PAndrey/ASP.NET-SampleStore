@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SampleStore.Model.Entities.Abstract
+namespace SampleStore.Domain.Entities.Abstract
 {
   public interface IProductRepository
   {

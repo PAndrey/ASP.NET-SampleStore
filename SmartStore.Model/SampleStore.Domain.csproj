@@ -7,7 +7,7 @@
     <ProjectGuid>{5009CD76-577C-4C64-9018-973B56D5435A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SampleStore.Model</RootNamespace>
+    <RootNamespace>SampleStore.Domain</RootNamespace>
     <AssemblyName>SampleStore.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

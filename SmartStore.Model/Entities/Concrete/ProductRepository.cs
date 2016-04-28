@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SampleStore.Model.Entities;
-using SampleStore.Model.Entities.Abstract;
+using SampleStore.Domain.Entities;
+using SampleStore.Domain.Entities.Abstract;
 
-namespace SampleStore.Model.Entities.Concrete
+namespace SampleStore.Domain.Entities.Concrete
 {
   public class ProductRepository : IProductRepository
   {

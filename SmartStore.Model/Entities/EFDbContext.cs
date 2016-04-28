@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using SampleStore.Model.Entities;
+using SampleStore.Domain.Entities;
 
-namespace SampleStore.Model.Entities
+namespace SampleStore.Domain.Entities
 {
   public class EFDbContext : DbContext
   {

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-using SampleStore.Model.Entities.Abstract;
-using SampleStore.Model.Entities;
+using SampleStore.Domain.Entities.Abstract;
+using SampleStore.Domain.Entities;
 
 namespace SampleStore.WebUI.Controllers
 {

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleStore.WebUI", "Sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleStore.Tests", "SampleStore.Tests\SampleStore.Tests.csproj", "{2FB40013-69A6-40C1-BBC9-7E4EB9CF8917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleStore.Model", "SmartStore.Model\SampleStore.Model.csproj", "{5009CD76-577C-4C64-9018-973B56D5435A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleStore.Domain", "SmartStore.Model\SampleStore.Domain.csproj", "{5009CD76-577C-4C64-9018-973B56D5435A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

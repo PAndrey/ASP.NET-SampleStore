@@ -144,9 +144,9 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SmartStore.Model\SampleStore.Model.csproj">
+    <ProjectReference Include="..\SmartStore.Model\SampleStore.Domain.csproj">
       <Project>{5009cd76-577c-4c64-9018-973b56d5435a}</Project>
-      <Name>SampleStore.Model</Name>
+      <Name>SampleStore.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
