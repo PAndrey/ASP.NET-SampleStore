@@ -18,10 +18,10 @@ namespace SampleStore.WebUI.Controllers
         {
           Product[] products = new Product[] 
           {
-            new Product { Id = 0, Name = "USB Drive", Price = 600, Description = "USB-Флеш на 32 Гб."},
-            new Product { Id = 1, Name = "HDD Drive", Price = 1600, Description = "HDD 1-Тб."},
-            new Product { Id = 2, Name = "iMac", Price = 150000, Description = "Персональный ПК от Apple."},
-            new Product { Id = 3, Name = "iPhone", Price = 35000, Description = "Телефон от Apple."}
+            new Product { ProductId = 0, Name = "USB Drive", Price = 600, Description = "USB-Флеш на 32 Гб."},
+            new Product { ProductId = 1, Name = "HDD Drive", Price = 1600, Description = "HDD 1-Тб."},
+            new Product { ProductId = 2, Name = "iMac", Price = 150000, Description = "Персональный ПК от Apple."},
+            new Product { ProductId = 3, Name = "iPhone", Price = 35000, Description = "Телефон от Apple."}
           };
           return View(products.AsEnumerable());
         }
