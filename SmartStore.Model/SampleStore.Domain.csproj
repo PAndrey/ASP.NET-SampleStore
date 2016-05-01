@@ -53,6 +53,7 @@
     <Compile Include="Entities\Abstract\IProductRepository.cs" />
     <Compile Include="Entities\Abstract\IUserRepository.cs" />
     <Compile Include="Entities\Concrete\ProductRepository.cs" />
+    <Compile Include="Entities\Concrete\UsersRepository.cs" />
     <Compile Include="Entities\EFDbContext.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\User.cs" />

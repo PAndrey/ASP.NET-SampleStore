@@ -1,16 +1,27 @@
-﻿@model IEnumerable<SampleStore.Domain.Entities.Product>
+﻿@model SampleStore.WebUI.Models.IndexPageModel
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Список товаров:</h2>
 
-@foreach (var p in Model)
+@foreach (var p in Model.Products)
 {
     <b>@p.Name -</b><blockquote>@p.Description</blockquote><br />
    
-    <div>It cost @p.Price.ToString("c")</div>
+    <div>Стоимость @p.Price.ToString("c")</div>
     
+    <hr />
+}
+
+<h1>Пользователи</h1>
+
+@foreach (var p in Model.Users)
+{
+    <b>@p.Name -</b>
+    <blockquote>@p.Permission.ToString()</blockquote><br />
+
+
     <hr />
 }
