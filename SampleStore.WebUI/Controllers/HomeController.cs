@@ -17,6 +17,11 @@ namespace SampleStore.WebUI.Controllers
         //
         // GET: /Home/
 
+      public ActionResult Page(int pageNumber)
+      {
+        Index
+      }
+
         public ActionResult Index()
         {
           /*
