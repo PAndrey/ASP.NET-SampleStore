@@ -14,12 +14,34 @@ namespace SampleStore.WebUI.Controllers
 {
     public class HomeController : Controller
     {
+      // Репозиторий с данными
+      private IProductRepository productsRepo = new ProductRepository();
+
+      // Настройка отображения страниц
+      private PagingInfo pagingInfo = new PagingInfo();
+
+      public HomeController()
+      {
+        pagingInfo.SelectedPage = 0;
+        pagingInfo.RecordsPerPage = 2;
+        pagingInfo.TotalRecords = productsRepo.Products.Count();
+      }
+
         //
         // GET: /Home/
 
-      public ActionResult Page(int pageNumber)
+      public ActionResult Page(int pageNumber = 0)
       {
-        Index
+        pagingInfo.SelectedPage = pageNumber;
+
+        var selectedProducts = productsRepo.Products
+                              .Skip(pagingInfo.SelectedPage * pagingInfo.RecordsPerPage)
+                              .Take(pagingInfo.RecordsPerPage);
+
+        PageViewModel model = new PageViewModel(selectedProducts,
+                                                pagingInfo);
+
+        return View(model);
       }
 
         public ActionResult Index()
@@ -35,8 +57,9 @@ namespace SampleStore.WebUI.Controllers
 
                      return View(products.AsEnumerable());
            */
-
-          IndexPageModel model = new IndexPageModel();
+          var selectedProducts = productsRepo.Products.Take(pagingInfo.RecordsPerPage);
+          PageViewModel model = new PageViewModel(selectedProducts,
+                                                  pagingInfo);
 
           return View(model);
         }

@@ -8,22 +8,15 @@ using SampleStore.WebUI.Models;
 
 namespace SampleStore.WebUI.Controllers
 {
-  // Класс со вспомогатльными функциями
+    // Класс со вспомогательными функциями
     public class HelperController : Controller
     {
       // Метод для отображения списка страниц и текущего выбора
       [ChildActionOnly]
-      public ActionResult ShowPageLinks()
+      public ActionResult ShowPageLinks(PagingInfo pagingInfo)
       {
-        // Получим информацию из сессии 
-        PageLinks links = (PageLinks)Session["PageLinks"];
-        if (links == null)
-        {
-          links = new PageLinks();
-        }
-
         // Отобразим список
-        return PartialView(links);
+        return PartialView(pagingInfo);
       }
 
     }

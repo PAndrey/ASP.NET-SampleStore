@@ -7,18 +7,25 @@ using SampleStore.Domain.Entities;
 
 namespace SampleStore.WebUI.Models
 {
-  public class PageLinks
+  public class PagingInfo
   {
-    // Всего страниц
-    public int TotalPages { get; set; }
-
     // Выбранная страница
     public int SelectedPage { get; set; }
 
-    public PageLinks(IEnumerable<Product> products)
+    // Число записей на странице
+    public int RecordsPerPage { get; set; }
+
+    // Общее число записей
+    public int TotalRecords { get; set; }
+
+
+    // Всего страниц
+    public int TotalPages
     {
-
+      get
+      {
+        return TotalRecords / RecordsPerPage;
+      }
     }
-
   }
 }

@@ -1,0 +1,37 @@
+﻿@model SampleStore.WebUI.Models.PageViewModel
+
+@{
+    ViewBag.Title = "Page";
+}
+
+<h1>Текущие настройки модели:</h1>
+<table>
+    <thead><tr><td>Параметр</td><td>Значение</td></tr></thead>
+    <tbody>
+        <tr>
+            <td>Model.PagingInfo.TotalRecords</td>
+            <td>@Model.PagingInfo.TotalRecords</td>
+        </tr>
+        <tr>
+            <td>Model.PagingInfo.RecordsPerPage</td>
+            <td>@Model.PagingInfo.RecordsPerPage</td>
+        </tr>
+        <tr>
+            <td>Model.PagingInfo.SelectedPage</td>
+            <td>@Model.PagingInfo.SelectedPage</td>
+        </tr>
+        <tr>
+            <td>Model.PagingInfo.TotalPages</td>
+            <td>@Model.PagingInfo.TotalPages</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr />
+
+<h2>Page @Model.PagingInfo.SelectedPage</h2>
+
+<span>Отобразим ссылки другие страницы</span>
+<br />
+
+@Html.Action("ShowPageLinks", "Helper", new { pagingInfo = Model.PagingInfo })

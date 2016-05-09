@@ -1,4 +1,4 @@
-﻿@model SampleStore.WebUI.Models.IndexPageModel
+﻿@model SampleStore.WebUI.Models.PageViewModel
 
 @{
     ViewBag.Title = "Index";
@@ -15,15 +15,3 @@
     <hr />
 }
 
-<h1>Пользователи</h1>
-
-@foreach (var p in Model.Users)
-{
-    <b>@p.Name -</b>
-    <blockquote>@p.Permission.ToString()</blockquote><br />
-
-
-    <hr />
-}
-
-@Html.RenderAction("ShowPageLinks", "Helper");

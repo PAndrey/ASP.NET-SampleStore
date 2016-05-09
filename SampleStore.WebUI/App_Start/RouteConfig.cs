@@ -14,6 +14,12 @@ namespace SampleStore.WebUI
       routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
       routes.MapRoute(
+          name: "Pages",
+          url: "Page{pageNumber}",
+          defaults: new { controller = "Home", action = "Page" }
+      );
+
+      routes.MapRoute(
           name: "Default",
           url: "{controller}/{action}/{id}",
           defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
