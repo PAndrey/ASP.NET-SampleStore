@@ -2,18 +2,19 @@
 
 <table>
     <tr>
-    <td class="pageLinksTotal">@Model.TotalPages</td>
+        <td class="pageLinksTotal">@Model.TotalPages</td>
+        <td>Начало</td>
 
-    @{
-        // Число отображенных страниц
-        int pagesSeen = 3;
-        // Отобразим 
-        for (int pageNumber = 0; pageNumber < Model.TotalPages;pageNumber++ )
-        {
-            
+        <!-- Отобразим несколько видимых страниц -->
+        @{
+            for (int pageNum = 0;pageNum < Model.TotalPages;pageNum++)
+            {
+                <td>pageNum</td>
+            }
         }
-    }
-    <td>@Model.SelectedPage</td>
+
+    <td>[@Model.SelectedPage]</td>
+        <td>Конец</td>
 
     </tr>
 </table>
